@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/styles.css">
+    <title>Odin Project Sign-up Form</title>
+</head>
+<body>
+    <div class="img-form-container">
+        <div class="img-container">
+            <img class="img-logo" src="./images/lennon-cheng-yAeUPmbyS-0-unsplash.jpg" alt="background section">
+        </div>
+        <div class="odin-back">
+            <img class="img-odin" src="./images/odin-lined.png" alt="Odin Project logo">ODIN</div>
+        <div class="credit-container">
+            <p class="photo-credits">Photo by <a href="https://unsplash.com/it/@lennonzf?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Lennon Cheng</a> on 
+                        <a href="https://unsplash.com/it/foto/strade-vuote-circondavano-edifici-yAeUPmbyS-0?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+            </p>
+        </div>
+    </div>
+    <form class="form-container" id="form-container" action="" method="post">
+        <div class="text-hero">
+            <h1>
+                The long road to achieving your goals is made up of steps that test your determination. 
+                No matter how challenging the journey, every small step brings you closer 
+                to the destination and makes the achievement even more meaningful. 
+                Keep moving forward, because your dreams are waiting for you.
+            </h1>
+        </div>
+        <div class="form-input-block">
+            <div class="left-form">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" placeholder="Insert your name..." required>
+                <label for="email">Email</label>
+                <input type="email" id="email"  placeholder="Insert your e-mail..." required>
+                <label for="pwd">Password</label>
+                <input type="password" id="pwd" placeholder="Insert your password..." required>
+            </div>
+            <div class="right-form">
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" placeholder="Insert your surname..." required>
+                <label for="phone-number">Phone Number</label>
+                <!--For now, I have used the pattern for Italian phone numbers-->
+                <input type="tel" id="phone-number" 
+                       pattern="(\+39\s?)?([0-9]{2,4})?[-\s\.]?[0-9]{3,4}[-\s\.]?[0-9]{4}" 
+                       placeholder="Insert your number..." required>
+                <label for="confirm-pwd">Confirm Password</label>
+                <input type="password" id="confirm-pwd" placeholder="Confirm your password..." required>
+            </div>
+        </div>
+        <div class="btn-container">
+            <button id="confirm-btn" type="submit">Create Account</button>
+            <p class="login-para">Already have an account?<a id="log-link" href="/" target="_blank"> Log in</a></p>    
+        </div>
+    </form>
+    <script src="./scripts/script.js"></script>
+</body>
+</html>
